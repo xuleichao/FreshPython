@@ -42,6 +42,13 @@ def string_pwd(n,with_upper=1): #生成一个n位的随机字符串密码
                     asc = chr(random_asc)
                     pwd += asc
                 else:
-                    pass ##这里有一个bug，要怎么改这个bug
+                    pass ##这里有一个bug，要怎么改这个bug,可以试试用while循环来写。
     return pwd
+
+###09.03
+def save_pwd(password):
+    f = open(r'D:\github\FreshPython\mm.txt','ab')
+    f.write(password.encode('utf-8'))
+    f.write('\n'.encode('utf-8'))
+    f.close()
     
