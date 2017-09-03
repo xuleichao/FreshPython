@@ -47,7 +47,7 @@ def string_pwd(n,with_upper=1): #生成一个n位的随机字符串密码
 
 ###09.03
 def save_pwd(password):
-    f = open(r'D:\github\FreshPython\mm.txt','ab')
+    f = open(r'D:\github\FreshPython\mm.txt','ab') #会考虑是不是存到数据库，excel，连接要不要存
     f.write(password.encode('utf-8'))
     f.write('\n'.encode('utf-8'))
     f.close()
